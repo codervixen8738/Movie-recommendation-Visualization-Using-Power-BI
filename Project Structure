@@ -1,0 +1,4 @@
+visualization-project/
+├── data.csv / data.json  # Your dataset
+├── PerformanceDataPowerBi.pbix # Power BI / Tableau file
+├── README.md             # Project explanation
