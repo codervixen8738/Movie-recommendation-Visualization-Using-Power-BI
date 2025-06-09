@@ -33,4 +33,6 @@ Filter by Recommendation Score
 
 ## Screenshot
 ![Preview](![Screenshot (68)](https://github.com/user-attachments/assets/37df33ab-fca2-476d-a958-67a7d3c149a9)
+![Screenshot (67)](https://github.com/user-attachments/assets/042b594f-e9d6-41a3-b339-9822b7c59b41)
+
 
