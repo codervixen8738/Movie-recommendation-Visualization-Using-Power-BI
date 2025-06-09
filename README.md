@@ -28,8 +28,8 @@ Filter by Rating Range
 Filter by Recommendation Score
 
 ## How to View
-- Open `.pbix` file in Power BI
-- Dataset in `data.csv`
+- Open `PowerBIPerformancedata.pbix` file in Power BI
+- Dataset in `movies(1).csv`
 
 ## Screenshot
 ![Preview](![Screenshot (68)](https://github.com/user-attachments/assets/37df33ab-fca2-476d-a958-67a7d3c149a9)
