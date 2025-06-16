@@ -1,0 +1,139 @@
+{
+  "config": "{\"version\":\"5.64\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.64\",\"type\":2},\"customTheme\":{\"name\":\"Innovate2547378206005254.json\",\"version\":\"5.64\",\"type\":1}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":2,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true,\"useEnhancedTooltips\":true,\"filterPaneHiddenInEditMode\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "1781236b7f3a0d1fd10e",
+      "config": "{}",
+      "name": "74d5060e56f96572af51"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Innovate2547378206005254.json",
+            "path": "Innovate2547378206005254.json",
+            "type": 201
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 3,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1781236b7f3a0d1fd10e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"9c8e9f960a3d8ae6a0b5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":224,\"y\":368,\"z\":3000,\"width\":288,\"height\":240,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(movies (1).Average_Rating)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Average_Rating)\",\"NativeReferenceName\":\"Sum of Average_Rating\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 240.00,
+          "width": 288.00,
+          "x": 224.00,
+          "y": 368.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c171d928603447fad39a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":714,\"y\":77,\"width\":477,\"height\":175,\"z\":2000,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"kpi\",\"projections\":{\"TrendLine\":[{\"queryRef\":\"movies (1).Title\"}],\"Indicator\":[{\"queryRef\":\"Sum(movies (1).Average_Rating)\"}],\"Goal\":[{\"queryRef\":\"CountNonNull(movies (1).Movie_ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Average_Rating)\",\"NativeReferenceName\":\"Sum of Average_Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title\"},\"Name\":\"movies (1).Title\",\"NativeReferenceName\":\"Title\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Movie_ID\"}},\"Function\":5},\"Name\":\"CountNonNull(movies (1).Movie_ID)\",\"NativeReferenceName\":\"Count of Movie_ID\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 175.00,
+          "width": 477.00,
+          "x": 714.00,
+          "y": 77.00,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"d436d6be5bc6a9c4d0a9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":80,\"y\":48.00000000000001,\"z\":1000,\"width\":480,\"height\":256,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"advancedSlicerVisual\",\"projections\":{\"Values\":[{\"queryRef\":\"movies (1).Genre\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genre\"},\"Name\":\"movies (1).Genre\",\"NativeReferenceName\":\"Genre\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genre\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Horror'\"}}]]}}}]}}}}]}}}",
+          "filters": "[]",
+          "height": 256.00,
+          "width": 480.00,
+          "x": 80.00,
+          "y": 48.00,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"ffdc1df0c71e845ae0e3\",\"layouts\":[{\"id\":0,\"position\":{\"x\":713.9107611548557,\"y\":334.2782152230971,\"z\":0,\"width\":477.0603674540682,\"height\":325.8792650918635,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"gauge\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(movies (1).Average_Rating)\"}],\"Tooltips\":[{\"queryRef\":\"Min(movies (1).Genre)\"}],\"MinValue\":[{\"queryRef\":\"CountNonNull(movies (1).Movie_ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Average_Rating)\",\"NativeReferenceName\":\"Sum of Average_Rating\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genre\"}},\"Function\":3},\"Name\":\"Min(movies (1).Genre)\",\"NativeReferenceName\":\"First Genre\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Movie_ID\"}},\"Function\":5},\"Name\":\"CountNonNull(movies (1).Movie_ID)\",\"NativeReferenceName\":\"Count of Movie_ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{}}}",
+          "filters": "[]",
+          "height": 325.88,
+          "width": 477.06,
+          "x": 713.91,
+          "y": 334.28,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 1",
+      "displayOption": 2,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c8f29da8394500411a50",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1219b86c9ac10d87ff0a\",\"layouts\":[{\"id\":0,\"position\":{\"x\":28.556430446194224,\"y\":28.556430446194224,\"z\":0,\"width\":552.6509186351706,\"height\":346.03674540682414,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(movies (1).Average_Rating)\"}],\"Category\":[{\"queryRef\":\"movies (1).Title\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Average_Rating)\",\"NativeReferenceName\":\"Sum of Average_Rating\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Title\"},\"Name\":\"movies (1).Title\",\"NativeReferenceName\":\"Title\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 346.04,
+          "width": 552.65,
+          "x": 28.56,
+          "y": 28.56,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"aff7a0156ce79699d129\",\"layouts\":[{\"id\":0,\"position\":{\"x\":660.1574803149606,\"y\":28.556430446194224,\"z\":1000,\"width\":556.010498687664,\"height\":346.03674540682414,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"movies (1).Genre\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(movies (1).Year)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genre\"},\"Name\":\"movies (1).Genre\",\"NativeReferenceName\":\"Genre\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Year\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Year)\",\"NativeReferenceName\":\"Sum of Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Year\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 346.04,
+          "width": 556.01,
+          "x": 660.16,
+          "y": 28.56,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"bf83aacf2ff2a1e18dca\",\"layouts\":[{\"id\":0,\"position\":{\"x\":660,\"y\":420,\"width\":556,\"height\":300,\"z\":3000,\"tabOrder\":3000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Category\":[{\"queryRef\":\"movies (1).Genre\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(movies (1).Average_Rating)\"},{\"queryRef\":\"CountNonNull(movies (1).Movie_ID)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Genre\"},\"Name\":\"movies (1).Genre\",\"NativeReferenceName\":\"Genre\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Average_Rating)\",\"NativeReferenceName\":\"Sum of Average_Rating\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Movie_ID\"}},\"Function\":5},\"Name\":\"CountNonNull(movies (1).Movie_ID)\",\"NativeReferenceName\":\"Count of Movie_ID\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 300.00,
+          "width": 556.00,
+          "x": 660.00,
+          "y": 420.00,
+          "z": 3000.00
+        },
+        {
+          "config": "{\"name\":\"c79f4210648bf2767e9f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":32,\"y\":400,\"z\":2000,\"width\":544,\"height\":288,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(movies (1).Year)\"},{\"queryRef\":\"Sum(movies (1).Number_of_Ratings)\"},{\"queryRef\":\"Sum(movies (1).Average_Rating)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"m\",\"Entity\":\"movies (1)\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Year\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Year)\",\"NativeReferenceName\":\"Sum of Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Number_of_Ratings\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Number_of_Ratings)\",\"NativeReferenceName\":\"Sum of Number_of_Ratings\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Average_Rating\"}},\"Function\":0},\"Name\":\"Sum(movies (1).Average_Rating)\",\"NativeReferenceName\":\"Sum of Average_Rating\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"m\"}},\"Property\":\"Year\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[]",
+          "height": 288.00,
+          "width": 544.00,
+          "x": 32.00,
+          "y": 400.00,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ],
+  "theme": "Innovate2547378206005254.json"
+}
