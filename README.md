@@ -28,7 +28,7 @@ Filter by Rating Range
 Filter by Recommendation Score
 
 ## How to View
-- Open `PowerBIPerformancedata.pbix` file in Power BI
+- Open `movierecommendation_dashboard.pbix` file in Power BI
 - Dataset in `movies(1).csv`
 
 ## Screenshot
